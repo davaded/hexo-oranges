@@ -483,3 +483,19 @@ lazyload:
 ## License
 
 MIT
+
+
+## 更改
+在原有的基础上修改多媒体资源并排显示的功能
+在文章中使用{% mgrid %}标签，即可实现多媒体资源并排显示的功能。
+例如：
+``` markdown
+{% mgrid %}
+![图片1](/path/to/image1.jpg)
+![图片2](/path/to/image2.jpg)
+<video controls width="100%">
+    <source src=".mp4" type="video/mp4">       
+    您的浏览器不支持 video 标签 
+</video>
+{% endmgrid %}
+```
